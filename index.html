@@ -1,1 +1,511 @@
-<!doctype html><html><head><meta http-equiv="Content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"/><meta name="apple-mobile-web-app-capable" content="yes"/><script defer="defer" src="/hbui/index-55c34c1221cf0c4e1c27.js"></script><link href="/hbui/index-f884ad62606946f2da11.css" rel="stylesheet"><link href="/hbui/menus-theme-ab209e4f9d83a5a5ec11.css" rel="stylesheet"><link href="/hbui/gameplay-theme-5a42f3957c090443d4d2.css" rel="stylesheet"></head><body><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – Level Up App</title>
+  <style>
+    :root {
+      --bg:    #070a12;
+      --card:  #0b1020;
+      --neon:  #7c4dff;
+      --neon2: #00e5ff;
+      --text:  #e8eaf0;
+      --muted: #8892a4;
+      --border: rgba(124, 77, 255, 0.25);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--card) 0%, #0d1428 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    header .logo {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--neon), var(--neon2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+
+    .toc h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--neon);
+      margin-bottom: 12px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    .toc a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .toc a:hover { color: var(--neon2); }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 .num {
+      color: var(--neon);
+      margin-right: 8px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--neon2);
+      margin: 20px 0 8px;
+    }
+
+    p { margin-bottom: 12px; color: #c8d0dc; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: #c8d0dc;
+    }
+
+    .highlight {
+      background: rgba(124, 77, 255, 0.08);
+      border-left: 3px solid var(--neon);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+
+    .highlight p { margin: 0; }
+
+    .info-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+
+    .info-box .label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--neon);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th {
+      background: rgba(124, 77, 255, 0.1);
+      color: var(--neon);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #c8d0dc;
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    a { color: var(--neon2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .chip {
+      display: inline-block;
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      color: var(--neon2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 2px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      main { padding: 24px 16px 60px; }
+      table { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">⚡</div>
+  <h1>Datenschutzerklärung</h1>
+  <p>Level Up App &nbsp;·&nbsp; Stand: Mai 2026</p>
+</header>
+
+<main>
+
+  <div class="toc">
+    <h2>Inhaltsverzeichnis</h2>
+    <ol>
+      <li><a href="#verantwortlicher">Verantwortlicher</a></li>
+      <li><a href="#erhobene-daten">Welche Daten wir erheben</a></li>
+      <li><a href="#zweck">Zweck und Rechtsgrundlage</a></li>
+      <li><a href="#dritte">Drittanbieter & Dienste</a></li>
+      <li><a href="#speicherung">Speicherung & Löschung</a></li>
+      <li><a href="#rechte">Deine Rechte (DSGVO)</a></li>
+      <li><a href="#kinder">Kinder</a></li>
+      <li><a href="#aenderungen">Änderungen</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section id="verantwortlicher">
+    <h2><span class="num">1.</span> Verantwortlicher</h2>
+    <div class="info-box">
+      <div class="label">Verantwortliche Person (Art. 4 Nr. 7 DSGVO)</div>
+      <p><strong>Kevin Sarbach</strong><br/>
+      E-Mail: <a href="mailto:k.sarbach@outlook.de">k.sarbach@outlook.de</a></p>
+    </div>
+    <p>
+      Als verantwortliche Person im Sinne der Datenschutz-Grundverordnung (DSGVO)
+      bin ich für die Verarbeitung deiner personenbezogenen Daten in der App
+      <strong>Level Up</strong> zuständig.
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section id="erhobene-daten">
+    <h2><span class="num">2.</span> Welche Daten wir erheben</h2>
+
+    <h3>2.1 Lokal gespeicherte Daten (kein Cloud-Backup)</h3>
+    <p>
+      Die folgenden Daten werden ausschließlich lokal auf deinem Gerät gespeichert
+      und <strong>nicht</strong> an externe Server übertragen, solange du kein
+      Cloud Backup aktivierst:
+    </p>
+    <table>
+      <tr>
+        <th>Datenkategorie</th>
+        <th>Beispiele</th>
+        <th>Zweck</th>
+      </tr>
+      <tr>
+        <td>Spielfortschritt</td>
+        <td>Level, XP, Coins, Streak</td>
+        <td>App-Kernfunktion</td>
+      </tr>
+      <tr>
+        <td>Quest-Daten</td>
+        <td>Abgeschlossene Quests, Kalenderdaten</td>
+        <td>Fortschrittsverfolgung</td>
+      </tr>
+      <tr>
+        <td>Körpermessungen</td>
+        <td>Gewicht, Umfänge (optional eingegeben)</td>
+        <td>Persönliches Tracking</td>
+      </tr>
+      <tr>
+        <td>App-Einstellungen</td>
+        <td>Sound, Vibration, Tagesziel Wasser</td>
+        <td>Personalisierung</td>
+      </tr>
+      <tr>
+        <td>Trial-Status</td>
+        <td>Startdatum der kostenlosen Testphase</td>
+        <td>Lizenzverwaltung</td>
+      </tr>
+    </table>
+
+    <h3>2.2 Daten bei Cloud Backup (optional)</h3>
+    <p>
+      Wenn du das freiwillige Cloud Backup aktivierst, meldest du dich mit
+      deinem Google-Konto an. Dabei werden folgende zusätzliche Daten verarbeitet:
+    </p>
+    <ul>
+      <li>Google-Konto-ID (eindeutige Nutzer-ID von Google)</li>
+      <li>Name und E-Mail-Adresse deines Google-Kontos</li>
+      <li>Alle lokal gespeicherten Daten aus Abschnitt 2.1 (verschlüsselt in der Cloud)</li>
+    </ul>
+    <div class="highlight">
+      <p>
+        Das Cloud Backup ist <strong>vollständig optional</strong>. Die App
+        funktioniert vollständig ohne es. Du kannst es jederzeit deaktivieren
+        und alle gespeicherten Cloud-Daten löschen.
+      </p>
+    </div>
+
+    <h3>2.3 Daten bei In-App-Käufen (optional)</h3>
+    <p>
+      Wenn du die Pro-Version kaufst, wird die Transaktion über den
+      Google Play Store abgewickelt. Wir erhalten dabei lediglich eine
+      Bestätigung des Kaufs — keine Zahlungsdaten.
+    </p>
+  </section>
+
+  <!-- 3 -->
+  <section id="zweck">
+    <h2><span class="num">3.</span> Zweck und Rechtsgrundlage</h2>
+    <table>
+      <tr>
+        <th>Verarbeitung</th>
+        <th>Rechtsgrundlage</th>
+      </tr>
+      <tr>
+        <td>Lokale App-Daten (Spielfortschritt, Quests)</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</td>
+      </tr>
+      <tr>
+        <td>Körpermessungen</td>
+        <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Eingabe)</td>
+      </tr>
+      <tr>
+        <td>Cloud Backup mit Google-Login</td>
+        <td>Art. 6 Abs. 1 lit. a DSGVO (ausdrückliche Einwilligung)</td>
+      </tr>
+      <tr>
+        <td>In-App-Kauf (Pro-Version)</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- 4 -->
+  <section id="dritte">
+    <h2><span class="num">4.</span> Drittanbieter &amp; Dienste</h2>
+
+    <h3>Google Firebase (Cloud Backup)</h3>
+    <p>
+      Wenn du das Cloud Backup aktivierst, verwenden wir
+      <strong>Google Firebase</strong> (Google Ireland Limited, Gordon House,
+      Barrow Street, Dublin 4, Irland). Die Daten werden in
+      Rechenzentren innerhalb der EU gespeichert.
+    </p>
+    <p>
+      Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).<br/>
+      Datenschutzerklärung Google: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+    </p>
+
+    <h3>Google Play &amp; In-App-Käufe</h3>
+    <p>
+      Käufe werden über den Google Play Store (Google Ireland Limited) abgewickelt.
+      Wir haben keinen Zugriff auf Zahlungsdaten.<br/>
+      Datenschutzerklärung Google Play: <a href="https://play.google.com/about/play-terms" target="_blank">play.google.com/about/play-terms</a>
+    </p>
+
+    <h3>Lokale Push-Benachrichtigungen</h3>
+    <p>
+      Die App sendet lokale Benachrichtigungen (z. B. Inaktivitäts-Erinnerung,
+      wöchentliche Gewichtserinnerung). Diese werden ausschließlich lokal auf
+      deinem Gerät geplant — es werden dabei keine Daten an externe Server
+      übermittelt.
+    </p>
+  </section>
+
+  <!-- 5 -->
+  <section id="speicherung">
+    <h2><span class="num">5.</span> Speicherung &amp; Löschung</h2>
+
+    <h3>Lokale Daten</h3>
+    <p>
+      Alle lokalen App-Daten werden in <em>SharedPreferences</em> deines
+      Geräts gespeichert. Sie werden gelöscht, wenn du:
+    </p>
+    <ul>
+      <li>Die App deinstallierst</li>
+      <li>Den App-Speicher in den Geräteeinstellungen leerst</li>
+    </ul>
+
+    <h3>Cloud-Daten (bei aktiviertem Backup)</h3>
+    <p>
+      Cloud-Daten werden in Firebase Firestore gespeichert und bleiben
+      erhalten, bis du sie aktiv löschst. Du kannst deine Cloud-Daten
+      jederzeit in der App unter <strong>Cloud Backup → Alle Daten löschen</strong>
+      entfernen.
+    </p>
+
+    <div class="highlight">
+      <p>
+        Nach der Löschung werden alle deine Daten innerhalb von
+        <strong>30 Tagen</strong> vollständig aus den Firebase-Systemen entfernt.
+      </p>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section id="rechte">
+    <h2><span class="num">6.</span> Deine Rechte (DSGVO)</h2>
+    <p>Du hast folgende Rechte bezüglich deiner personenbezogenen Daten:</p>
+
+    <table>
+      <tr>
+        <th>Recht</th>
+        <th>Beschreibung</th>
+        <th>Wie geltend machen</th>
+      </tr>
+      <tr>
+        <td><span class="chip">Art. 15</span> Auskunft</td>
+        <td>Du kannst jederzeit Auskunft über deine gespeicherten Daten verlangen.</td>
+        <td>Per E-Mail an uns</td>
+      </tr>
+      <tr>
+        <td><span class="chip">Art. 16</span> Berichtigung</td>
+        <td>Unrichtige Daten können korrigiert werden.</td>
+        <td>In der App oder per E-Mail</td>
+      </tr>
+      <tr>
+        <td><span class="chip">Art. 17</span> Löschung</td>
+        <td>Du kannst die Löschung deiner Daten verlangen.</td>
+        <td>In der App (Cloud Backup → Löschen) oder per E-Mail</td>
+      </tr>
+      <tr>
+        <td><span class="chip">Art. 20</span> Datenportabilität</td>
+        <td>Du kannst deine Daten in einem maschinenlesbaren Format erhalten.</td>
+        <td>Per E-Mail anfordern</td>
+      </tr>
+      <tr>
+        <td><span class="chip">Art. 7 Abs. 3</span> Widerruf</td>
+        <td>Du kannst eine erteilte Einwilligung jederzeit widerrufen.</td>
+        <td>Cloud Backup deaktivieren oder Account löschen</td>
+      </tr>
+      <tr>
+        <td><span class="chip">Art. 77</span> Beschwerde</td>
+        <td>Du hast das Recht, dich bei einer Aufsichtsbehörde zu beschweren.</td>
+        <td>z. B. Landesbeauftragte für Datenschutz</td>
+      </tr>
+    </table>
+
+    <p>
+      Für Auskunfts- oder Löschanfragen wende dich bitte an:
+      <a href="mailto:k.sarbach@outlook.de">k.sarbach@outlook.de</a>
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section id="kinder">
+    <h2><span class="num">7.</span> Kinder</h2>
+    <p>
+      Die App richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich
+      keine personenbezogenen Daten von Kindern. Solltest du feststellen, dass
+      ein Kind unter 16 Jahren Daten übermittelt hat, wende dich bitte an uns,
+      damit wir diese umgehend löschen können.
+    </p>
+  </section>
+
+  <!-- 8 -->
+  <section id="aenderungen">
+    <h2><span class="num">8.</span> Änderungen dieser Datenschutzerklärung</h2>
+    <p>
+      Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen,
+      um sie an geänderte gesetzliche Anforderungen oder neue Funktionen der
+      App anzupassen. Die jeweils aktuelle Version ist auf dieser Seite
+      verfügbar. Das Datum der letzten Aktualisierung wird oben angegeben.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section id="kontakt">
+    <h2><span class="num">9.</span> Kontakt</h2>
+    <div class="info-box">
+      <div class="label">Datenschutzanfragen</div>
+      <p>
+        Für alle Fragen zum Datenschutz, Auskunftsersuchen oder
+        Löschanfragen erreichst du uns unter:<br/><br/>
+        <strong>E-Mail:</strong>
+        <a href="mailto:k.sarbach@outlook.de">k.sarbach@outlook.de</a><br/>
+        <strong>Betreff:</strong> Datenschutz – Level Up App
+      </p>
+    </div>
+    <p>
+      Wir bemühen uns, Anfragen innerhalb von <strong>30 Tagen</strong>
+      zu beantworten.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Kevin Sarbach &nbsp;·&nbsp; Level Up App</p>
+  <p style="margin-top:6px;">
+    <a href="mailto:k.sarbach@outlook.de">k.sarbach@outlook.de</a>
+  </p>
+</footer>
+
+</body>
+</html>
